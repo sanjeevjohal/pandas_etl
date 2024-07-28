@@ -1,0 +1,152 @@
+INFO:root:IMPORTANT::EXTRACT:: started at 2024-04-11 16:53:25.644061+00:00
+INFO:root:Extracted 944 rows and 8 columns from activity_data.csv
+WARNING:root:Invalid dates found in activity_data.csv
+WARNING:root:	>>Number of records with Invalid dates: 3
+WARNING:root:Missing values found in activity_data.csv
+WARNING:root:	>>Number of records with Missing values: 4
+WARNING:root:Negative SedentaryMinutess found in activity_data.csv
+WARNING:root:	>>Number of records with Negative SedentaryMinutess: 3
+WARNING:root:Duplicate recordss found in activity_data.csv
+WARNING:root:	>>Number of records with Duplicate recordss: 1
+INFO:root:Number of DQ issues found: 11 across 4 Ids
+INFO:root:Cleaned dataframe has 934 rows and 8 columns
+INFO:root:EXTRACT:: Row count check passed
+INFO:root:EXTRACT:: took 0 days 00:00:00.028741
+INFO:root:IMPORTANT::EXTRACT:: completed at 2024-04-11 16:53:25.644061+00:00
+INFO:root:IMPORTANT: First Line
+INFO:root:Number of rows in source: 944
+INFO:root:Number of rows in df: 944
+INFO:root:>>> Columns and data types
+INFO:root:Id - int64
+INFO:root:Date - object
+INFO:root:TotalSteps - float64
+INFO:root:TotalDistance - float64
+INFO:root:SedentaryMinutes - float64
+INFO:root:TotalActiveMinutes - int64
+INFO:root:Calories - int64
+INFO:root:yes_no - int64
+INFO:root:<<< Columns and data types
+INFO:root:EXTRACT STARTED at 2024-04-11 16:53:46.410131
+INFO:root:PKs []
+INFO:root:NOT PKs ['Id', 'Date', 'TotalSteps', 'TotalDistance', 'SedentaryMinutes', 'TotalActiveMinutes', 'Calories', 'yes_no']
+INFO:root:DQ::records with invalid dates [1, 8, 943]
+INFO:root:DQ::Records with missing NaN values: []
+INFO:root:DQ::Records with duplicates: [1, 943]
+INFO:root:DQ::Duplicated rows::2
+INFO:root:DQ::Invalid date::3
+INFO:root:Extract::Source row count: 944
+INFO:root:Extract::DQ row count: 3
+INFO:root:Extract::Clean row count: 941
+INFO:root:EXTRACT COMPLETE at 2024-04-11 16:53:46.503736
+INFO:root:TRANSFORM STARTED at 2024-04-11 16:53:46.506365
+INFO:root:ETL LOAD COMPLETE at 2024-04-11 16:53:46.765503
+INFO:root:IMPORTANT: First Line
+INFO:root:IMPORTANT: First Line
+INFO:root:IMPORTANT: First Line
+INFO:root:IMPORTANT: First Line
+INFO:root:IMPORTANT: First Line
+INFO:root:IMPORTANT: First Line
+INFO:root:Number of rows in source: 944
+INFO:root:Number of rows in df: 944
+INFO:root:>>> Columns and data types
+INFO:root:Id - int64
+INFO:root:Date - object
+INFO:root:TotalSteps - float64
+INFO:root:TotalDistance - float64
+INFO:root:SedentaryMinutes - float64
+INFO:root:TotalActiveMinutes - int64
+INFO:root:Calories - int64
+INFO:root:yes_no - int64
+INFO:root:DenseRank - float64
+INFO:root:DefaultRank - float64
+INFO:root:<<< Columns and data types
+INFO:root:EXTRACT STARTED at 2024-04-18 17:13:06.873746
+INFO:root:PKs []
+INFO:root:NOT PKs ['Id', 'Date', 'TotalSteps', 'TotalDistance', 'SedentaryMinutes', 'TotalActiveMinutes', 'Calories', 'yes_no', 'DenseRank', 'DefaultRank']
+INFO:root:DQ::records with invalid dates [1, 8, 943]
+INFO:root:DQ::Records with missing NaN values: []
+INFO:root:DQ::Records with duplicates: [1, 943]
+INFO:root:DQ::Duplicated rows::2
+INFO:root:DQ::Invalid date::3
+INFO:root:Extract::Source row count: 944
+INFO:root:Extract::DQ row count: 3
+INFO:root:Extract::Clean row count: 941
+INFO:root:EXTRACT COMPLETE at 2024-04-18 17:13:07.244726
+INFO:root:TRANSFORM STARTED at 2024-04-18 17:13:07.568519
+ERROR:root:LOAD::Error::name 'engine' is not defined
+INFO:root:IMPORTANT: First Line
+INFO:root:Number of rows in source: 944
+INFO:root:Extract::Source row count: 4
+INFO:root:TRANSFORM STARTED at 2024-04-19 11:44:52.719306
+INFO:root:TRANSFORM COMPLETE at 2024-04-19 11:44:53.320210
+ERROR:root:LOAD::Error::name 'df_clean' is not defined
+INFO:root:IMPORTANT: First Line
+INFO:root:Number of rows in source: 944
+INFO:root:Number of rows in df: 944
+INFO:root:>>> Columns and data types
+INFO:root:Id - int64
+INFO:root:Date - object
+INFO:root:TotalSteps - float64
+INFO:root:TotalDistance - float64
+INFO:root:SedentaryMinutes - float64
+INFO:root:TotalActiveMinutes - int64
+INFO:root:Calories - int64
+INFO:root:yes_no - int64
+INFO:root:DenseRank - float64
+INFO:root:DefaultRank - float64
+INFO:root:FirstRank - float64
+INFO:root:TotalActiveMinutesShift - float64
+INFO:root:TotalActiveMinutesDiff - float64
+INFO:root:TotalActiveMinutesCumSum - int64
+INFO:root:TotalActiveMinutesCumMax - int64
+INFO:root:TotalActiveMinutesRolling - float64
+INFO:root:TotalActiveMinutesClip - int64
+INFO:root:<<< Columns and data types
+INFO:root:EXTRACT STARTED at 2024-04-19 14:28:32.323798
+INFO:root:PKs ['FirstRank']
+INFO:root:NOT PKs ['Id', 'Date', 'TotalSteps', 'TotalDistance', 'SedentaryMinutes', 'TotalActiveMinutes', 'Calories', 'yes_no', 'DenseRank', 'DefaultRank', 'TotalActiveMinutesShift', 'TotalActiveMinutesDiff', 'TotalActiveMinutesCumSum', 'TotalActiveMinutesCumMax', 'TotalActiveMinutesRolling', 'TotalActiveMinutesClip']
+INFO:root:DQ::records with invalid dates [1, 8, 943]
+INFO:root:DQ::Records with missing NaN values: []
+INFO:root:DQ::Records with duplicates: []
+INFO:root:DQ::Invalid date::3
+INFO:root:Extract::Source row count: 944
+INFO:root:TRANSFORM STARTED at 2024-04-19 14:28:33.413500
+INFO:root:TRANSFORM COMPLETE at 2024-04-19 14:28:34.028753
+ERROR:root:LOAD::Error::name 'df_clean' is not defined
+INFO:root:LOAD::Row count in database: 941
+INFO:root:ETL LOAD COMPLETE at 2024-04-19 14:28:34.309176
+INFO:root:IMPORTANT: First Line
+INFO:root:IMPORTANT: First Line
+INFO:root:IMPORTANT: First Line
+INFO:root:IMPORTANT: First Line
+INFO:root:IMPORTANT: First Line
+INFO:root:IMPORTANT: First Line
+INFO:root:IMPORTANT: First Line
+INFO:root:IMPORTANT: First Line
+INFO:root:IMPORTANT: First Line
+INFO:root:Number of rows in source: 944
+INFO:root:Number of rows in df: 944
+INFO:root:>>> Columns and data types
+INFO:root:Id - int64
+INFO:root:Date - object
+INFO:root:TotalSteps - float64
+INFO:root:TotalDistance - float64
+INFO:root:SedentaryMinutes - float64
+INFO:root:TotalActiveMinutes - int64
+INFO:root:Calories - int64
+INFO:root:yes_no - int64
+INFO:root:DenseRank - float64
+INFO:root:DefaultRank - float64
+INFO:root:FirstRank - float64
+INFO:root:TotalActiveMinutesShift - float64
+INFO:root:TotalActiveMinutesDiff - float64
+INFO:root:TotalActiveMinutesCumSum - int64
+INFO:root:TotalActiveMinutesCumMax - int64
+INFO:root:TotalActiveMinutesRolling - float64
+INFO:root:TotalActiveMinutesClip - int64
+INFO:root:<<< Columns and data types
+INFO:root:EXTRACT STARTED at 2024-04-19 15:25:35.677738
+INFO:root:PKs ['FirstRank']
+INFO:root:NOT PKs ['Id', 'Date', 'TotalSteps', 'TotalDistance', 'SedentaryMinutes', 'TotalActiveMinutes', 'Calories', 'yes_no', 'DenseRank', 'DefaultRank', 'TotalActiveMinutesShift', 'TotalActiveMinutesDiff', 'TotalActiveMinutesCumSum', 'TotalActiveMinutesCumMax', 'TotalActiveMinutesRolling', 'TotalActiveMinutesClip']
+INFO:root:DQ::records with invalid dates [1, 8, 943]
+INFO:root:DQ::Records with missing NaN values: []
